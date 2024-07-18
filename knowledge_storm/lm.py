@@ -267,6 +267,7 @@ class ClaudeModel(dspy.dsp.modules.lm.LM):
             completions = [c.text for c in response.content]
         return completions
 
+# add an lmstudio model
 
 class VLLMClient(dspy.HFClientVLLM):
     """A wrapper class for dspy.HFClientVLLM."""
